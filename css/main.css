@@ -21,6 +21,12 @@ body {
   background-color: #e2e2e2;
 }
 
+.info {
+  display: inline-block;
+}
+
+h1 {}
+
 .btn {
   padding: 0.5em 0.75em 0.5em 0.75em;
   background-color: #555;
