@@ -18,72 +18,91 @@ html {
 }
 
 body {
-  background-color: #e2e2e2;
   margin: 0;
 }
 
 .info {
-  padding-left: 1rem;
-}
-
-h1 {
-  font-size: 1.5rem;
+  padding: 0.005rem 1rem 1rem 1rem;
   margin: 0;
-  padding-top: 1rem;
-  padding-bottom: 1.5rem;
+  display: inline-block;
 }
 
 .info > p {
-  margin-top: 0;
-  margin-bottom: 2rem;
+  margin: 0 0 .5rem 0;
+}
+
+h1 {
+  margin-top: 1.5rem;
 }
 
 .btn {
-  padding: 0.5em 0.75em 0.5em 0.75em;
+  padding: .45em;
+  margin: 5px;
+  border: 3px solid #555;
   background-color: #555;
+  display: inline-block;
   border-radius: 4px;
+  border-width: 3px;
   color: #fff;
+  font-size: 1.125rem;
   text-decoration: none;
-  text-align: center;
 }
 
 .btn:hover {
   background-color: #000;
+  border-color: #000;
+  border-width: 3px;
 }
 
 .img-flex {
   display: block;
-  margin: 0;
-  padding: 0;
+  width: 100%;
 }
 
 img {
   width: 100%;
+  display: block;
+}
+
+section {
+  vertical-align: middle;
+  background-color: #e2e2e2;
 }
 
 @media only screen and (max-width: 25em) {
 
-
+  html {
+    font-size: 110%;
+  }
 
 
 }
 
 @media only screen and (min-width: 38em) {
 
+  html {
+    line-height: 1.4;
+  }
+
   .info {
-    display: inline-block;
-    width: 48%;
-    padding-right: 1rem;
+    max-width: 49%;
   }
 
   .img-flex {
     display: inline-block;
-    width: 48%;
-    padding-top: .5rem;
+    max-width: 49%;
   }
 
   .collection {
     padding: 1rem 0 0 1rem;
+  }
+
+  section {
+    padding-top: 2rem;
+  }
+
+  .btn {
+    text-align: left;
   }
 
 }
