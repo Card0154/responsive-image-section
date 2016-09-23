@@ -26,6 +26,7 @@ body {
   margin: 0;
   display: inline-block;
   width: 100%;
+  text-align: left;
 }
 
 .info > p {
@@ -40,17 +41,17 @@ strong {
   margin: 0;
 }
 
-.btn {
+a {
   padding: .5em .75em;
   background-color: #555;
   display: inline-block;
   border-radius: 4px;
   color: #fff;
   text-decoration: none;
-  text-align: left;
+  text-align: center;
 }
 
-.btn:hover {
+a:hover {
   background-color: #000;
 }
 
@@ -69,7 +70,7 @@ img {
   background-color: #e2e2e2;
 }
 
-@media only screen and (max-width: 25em) {
+@media only screen and (min-width: 25em) {
 
   html {
     font-size: 100%;
@@ -121,22 +122,21 @@ img {
 
 @media only screen and (min-width: 90em) {
 
-   html {
-     font-size: 130%;
-   }
+  html {
+    font-size: 130%;
+  }
 
-   section {
-    text-align: center;
+  .collection {
     margin: auto;
-   }
+    padding-left: 14rem;
+    padding-right: 14rem;
+  }
 
-   .img-flex {
-     max-width: 550px;
-   }
+  .info {
+    max-width: 48%;
+  }
 
-   .card {
-     text-align: left;
-     max-width: 400px;
-   }
-
+  .img-flex {
+    max-width: 48%;
+  }
 }
